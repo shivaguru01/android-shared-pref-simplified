@@ -14,32 +14,52 @@
                                                 android:layout_height="wrap_content"
                                                 android:id="@+id/guideline"
                                                 android:orientation="horizontal"
-                                                app:layout_constraintGuide_percent="0.5"
-    />
+                                                app:layout_constraintGuide_percent="0.5"/>
 
     <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintBottom_toTopOf="@id/guideline"
             android:gravity="center"
+            app:layout_constraintWidth_percent="0.5"
             android:layout_marginBottom="8dp"
             android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Enter text to save"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/enter_name_to_save"
                 android:id="@+id/user_input"
                 android:singleLine="true"/>
     </com.google.android.material.textfield.TextInputLayout>
     <Button
-            android:text="Save"
+            android:text="@string/save_name"
+            android:padding="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/guideline"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
+            android:paddingHorizontal="16dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
             android:id="@+id/submit"/>
+
+
+    <Button
+            android:text="@string/toast_saved_name"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="208dp"
+            android:paddingHorizontal="16dp"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:id="@+id/toast"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

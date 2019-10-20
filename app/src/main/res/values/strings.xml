@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">android-shared-pref-simplified</string>
     <string name="action_settings">Settings</string>
+    <string name="save_name">Write to  preference</string>
+    <string name="enter_name_to_save">Enter a name to save</string>
+    <string name="toast_saved_name">Read from Preference</string>
+    <string name="saved">saved</string>
 </resources>

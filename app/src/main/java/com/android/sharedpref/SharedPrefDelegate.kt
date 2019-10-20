@@ -27,10 +27,10 @@ class StringSharedPreference(
     override var sharedPreferences: SharedPreferences,
     private val key: String,
     private val default: String? = null
-) : SharedPreferenceDelegate<String>() {
+) : SharedPreferenceDelegate<String?>() {
     override fun getValue(thisRef: Any, property: KProperty<*>): String = sharedPreferences.getString(key, default);
 
-    override fun setValue(thisRef: Any, property: KProperty<*>, value: String) =
+    override fun setValue(thisRef: Any, property: KProperty<*>, value: String?) =
         sharedPreferences.edit { putString(key, value) }
 }
 

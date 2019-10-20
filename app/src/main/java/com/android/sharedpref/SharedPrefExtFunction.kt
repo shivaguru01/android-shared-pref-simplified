@@ -6,7 +6,7 @@ import kotlin.properties.ReadWriteProperty
 fun SharedPreferences.int(key: String): ReadWriteProperty<Any, Int> =
     IntSharedPreference(sharedPreferences = this, key = key)
 
-fun SharedPreferences.string(key: String): ReadWriteProperty<Any, String> =
+fun SharedPreferences.string(key: String): ReadWriteProperty<Any, String?> =
     StringSharedPreference(sharedPreferences = this, key = key)
 
 fun SharedPreferences.float(key: String): ReadWriteProperty<Any, Float> =
