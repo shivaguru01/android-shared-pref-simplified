@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">android-shared-pref-simplified</string>
+    <string name="app_name">SharedPref-Kotlin</string>
     <string name="action_settings">Settings</string>
     <string name="save_name">Write to  preference</string>
     <string name="enter_name_to_save">Enter a name to save</string>
