@@ -1,4 +1,4 @@
-# android-shared-pref-simplified
+# Android Shared Preference - Kotlin
 
 Using shared Preference in android projects has become much simpler & cleaner with Kotlin's property delegate and extension feature.
 
